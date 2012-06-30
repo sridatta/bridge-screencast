@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-- (IBAction)editingDidEnd:(id)sender;
+@interface ViewController : UIViewController 
 
 @end

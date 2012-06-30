@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		731873F71598E804005BDCFE /* FeedHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 731873F61598E804005BDCFE /* FeedHandler.m */; };
+		731873FA1598E8D8005BDCFE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 731873F91598E8D8005BDCFE /* CFNetwork.framework */; };
+		731873FC1598E8DF005BDCFE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 731873FB1598E8DF005BDCFE /* Security.framework */; };
 		73CE71B71597A1FF00435960 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73CE71B61597A1FF00435960 /* UIKit.framework */; };
 		73CE71B91597A1FF00435960 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73CE71B81597A1FF00435960 /* Foundation.framework */; };
 		73CE71BB1597A1FF00435960 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73CE71BA1597A1FF00435960 /* CoreGraphics.framework */; };
@@ -20,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		731873F51598E804005BDCFE /* FeedHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedHandler.h; sourceTree = "<group>"; };
+		731873F61598E804005BDCFE /* FeedHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedHandler.m; sourceTree = "<group>"; };
+		731873F91598E8D8005BDCFE /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		731873FB1598E8DF005BDCFE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		73CE71B21597A1FF00435960 /* Fakebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fakebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73CE71B61597A1FF00435960 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		73CE71B81597A1FF00435960 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -42,6 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				731873FC1598E8DF005BDCFE /* Security.framework in Frameworks */,
+				731873FA1598E8D8005BDCFE /* CFNetwork.framework in Frameworks */,
 				73CE71B71597A1FF00435960 /* UIKit.framework in Frameworks */,
 				73CE71B91597A1FF00435960 /* Foundation.framework in Frameworks */,
 				73CE71BB1597A1FF00435960 /* CoreGraphics.framework in Frameworks */,
@@ -55,6 +64,8 @@
 		73CE71A71597A1FE00435960 = {
 			isa = PBXGroup;
 			children = (
+				731873FB1598E8DF005BDCFE /* Security.framework */,
+				731873F91598E8D8005BDCFE /* CFNetwork.framework */,
 				73CE71BC1597A1FF00435960 /* Fakebook */,
 				73CE71B51597A1FF00435960 /* Frameworks */,
 				73CE71B31597A1FF00435960 /* Products */,
@@ -89,6 +100,8 @@
 				73CE71CB1597A1FF00435960 /* MainStoryboard_iPad.storyboard */,
 				73CE71CE1597A1FF00435960 /* ViewController.h */,
 				73CE71CF1597A1FF00435960 /* ViewController.m */,
+				731873F51598E804005BDCFE /* FeedHandler.h */,
+				731873F61598E804005BDCFE /* FeedHandler.m */,
 				73CE71BD1597A1FF00435960 /* Supporting Files */,
 			);
 			path = Fakebook;
@@ -172,6 +185,7 @@
 				73CE71C31597A1FF00435960 /* main.m in Sources */,
 				73CE71C71597A1FF00435960 /* AppDelegate.m in Sources */,
 				73CE71D01597A1FF00435960 /* ViewController.m in Sources */,
+				731873F71598E804005BDCFE /* FeedHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +313,7 @@
 				73CE71D51597A1FF00435960 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

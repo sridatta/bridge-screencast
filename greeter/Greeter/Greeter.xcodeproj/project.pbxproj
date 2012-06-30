@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73027719159D19C0009F0CF7 /* bridge-ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73027717159D19AA009F0CF7 /* bridge-ios.framework */; };
 		731489941595113E002EAE5D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 731489931595113E002EAE5D /* UIKit.framework */; };
 		731489961595113E002EAE5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 731489951595113E002EAE5D /* Foundation.framework */; };
 		731489981595113E002EAE5D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 731489971595113E002EAE5D /* CoreGraphics.framework */; };
@@ -16,12 +17,12 @@
 		731489A71595113E002EAE5D /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 731489A51595113E002EAE5D /* MainStoryboard_iPhone.storyboard */; };
 		731489AA1595113E002EAE5D /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 731489A81595113E002EAE5D /* MainStoryboard_iPad.storyboard */; };
 		731489AD1595113E002EAE5D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 731489AC1595113E002EAE5D /* ViewController.m */; };
-		73148A4A15954369002EAE5D /* bridge-ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73148A481595435E002EAE5D /* bridge-ios.framework */; };
 		73148A4C1595437F002EAE5D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73148A4B1595437F002EAE5D /* CFNetwork.framework */; };
 		73148A4E15954383002EAE5D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73148A4D15954383002EAE5D /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		73027717159D19AA009F0CF7 /* bridge-ios.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "bridge-ios.framework"; sourceTree = "<group>"; };
 		7314898F1595113E002EAE5D /* Greeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Greeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		731489931595113E002EAE5D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		731489951595113E002EAE5D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -36,7 +37,6 @@
 		731489A91595113E002EAE5D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		731489AB1595113E002EAE5D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		731489AC1595113E002EAE5D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		73148A481595435E002EAE5D /* bridge-ios.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "bridge-ios.framework"; path = "../../../../Library/Developer/Xcode/DerivedData/bridge-ajbsyretmvlmzcfplquorxjwbmiw/Build/Products/Release-iphoneos/bridge-ios.framework"; sourceTree = "<group>"; };
 		73148A4B1595437F002EAE5D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		73148A4D15954383002EAE5D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -51,7 +51,7 @@
 				731489941595113E002EAE5D /* UIKit.framework in Frameworks */,
 				731489961595113E002EAE5D /* Foundation.framework in Frameworks */,
 				731489981595113E002EAE5D /* CoreGraphics.framework in Frameworks */,
-				73148A4A15954369002EAE5D /* bridge-ios.framework in Frameworks */,
+				73027719159D19C0009F0CF7 /* bridge-ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,8 +61,6 @@
 		731489841595113D002EAE5D = {
 			isa = PBXGroup;
 			children = (
-				73148A4D15954383002EAE5D /* Security.framework */,
-				73148A4B1595437F002EAE5D /* CFNetwork.framework */,
 				731489991595113E002EAE5D /* Greeter */,
 				731489921595113E002EAE5D /* Frameworks */,
 				731489901595113E002EAE5D /* Products */,
@@ -80,7 +78,9 @@
 		731489921595113E002EAE5D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				73148A481595435E002EAE5D /* bridge-ios.framework */,
+				73027717159D19AA009F0CF7 /* bridge-ios.framework */,
+				73148A4D15954383002EAE5D /* Security.framework */,
+				73148A4B1595437F002EAE5D /* CFNetwork.framework */,
 				731489931595113E002EAE5D /* UIKit.framework */,
 				731489951595113E002EAE5D /* Foundation.framework */,
 				731489971595113E002EAE5D /* CoreGraphics.framework */,
@@ -264,11 +264,18 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/bridge-ajbsyretmvlmzcfplquorxjwbmiw/Build/Products/Release-iphoneos\"",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/bridge-ajbsyretmvlmzcfplquorxjwbmiw/Build/Products/Release-iphonesimulator\"",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/bridge-ajbsyretmvlmzcfplquorxjwbmiw/Build/Intermediates/ArchiveIntermediates/bridge-ios release/IntermediateBuildFilesPath/UninstalledProducts\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Greeter/Greeter-Prefix.pch";
 				INFOPLIST_FILE = "Greeter/Greeter-Info.plist";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					"bridge-ios",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -280,11 +287,18 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/bridge-ajbsyretmvlmzcfplquorxjwbmiw/Build/Products/Release-iphoneos\"",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/bridge-ajbsyretmvlmzcfplquorxjwbmiw/Build/Products/Release-iphonesimulator\"",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/bridge-ajbsyretmvlmzcfplquorxjwbmiw/Build/Intermediates/ArchiveIntermediates/bridge-ios release/IntermediateBuildFilesPath/UninstalledProducts\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Greeter/Greeter-Prefix.pch";
 				INFOPLIST_FILE = "Greeter/Greeter-Info.plist";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					"bridge-ios",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

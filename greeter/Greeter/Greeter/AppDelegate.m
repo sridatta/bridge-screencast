@@ -22,7 +22,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-  Bridge* b = [[Bridge alloc] initWithApiKey:@"abcdefgh"];
+  
+  Bridge* b = [[Bridge alloc] initWithAPIKey:@"abcdefgh" andDelegate:self];
+  
   [b connect];
   [self setBridge:b];
   
